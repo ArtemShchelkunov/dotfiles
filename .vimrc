@@ -4,6 +4,7 @@
 " ---------------------------------------------------------------------
 syntax on
 
+set mouse-=a
 set nocompatible              			" be iMproved, required
 set laststatus=2				" Powerline config
 set t_Co=256					" Powerline config
@@ -23,6 +24,10 @@ let &t_ZH="\e[3m" " Добавляем поддержку италика
 let &t_ZR="\e[23m"
 
 filetype off                  			" required
+
+" Path for modules
+" ---------------------------------------------------------------------
+set rtp+=~/.config/vim/bundle/Vundle.vim 		" Vundle (changed)
 
 " XDG_BASE_DIRECTORY
 " ---------------------------------------------------------------------
@@ -76,9 +81,6 @@ autocmd VimEnter * if &filetype ==# 'python' | NERDTreeFind |
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
       \ && b:NERDTree.isTabTree()) | q | endif
 
-" Path for modules
-" ---------------------------------------------------------------------
-set rtp+=$HOME/.config/vim/bundle/Vundle.vim 		" Vundle (changed)
 
 
 " Vundle Dependencies
