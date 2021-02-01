@@ -1,4 +1,4 @@
-zsh ~/.config/fehbg &
+zsh ~/.config/feh/fehbg &
 picom &
 dwmblocks &
 xbindkeys -f "$XDG_CONFIG_HOME"/xbindkeys/config
