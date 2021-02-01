@@ -10,5 +10,3 @@ export XAUTHORITY="$XDG_CONFIG_HOME"/X11/Xauthority
 alias abook=abook --config "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/addressbook
 
 VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
-
-#source ~/.config/zsh/.zshrc

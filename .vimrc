@@ -78,8 +78,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")
 
 " Path for modules
 " ---------------------------------------------------------------------
-set rtp+=~/"$XDG_CONFIG_HOME"/vim/bundle/Vundle.vim 		" Vundle
-set rtp+=~/.config/powerline/bindings/vim	" Powerline
+set rtp+=$HOME/.config/vim/bundle/Vundle.vim 		" Vundle (changed)
 
 
 " Vundle Dependencies
