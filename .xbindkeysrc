@@ -60,6 +60,9 @@
 "gscreenshot-cli -sc"
   m:0x4 + c:107
 
+"$BROWSER"
+  m:0x40 + c:25
+
 # set directly keycode (here control + f with my keyboard)
 
 # specify a mouse button
