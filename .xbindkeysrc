@@ -63,6 +63,15 @@
 "$BROWSER"
   m:0x40 + c:25
 
+"$TERMINAL -e calcurse"
+  m:0x40 + c:54
+
+"$TERMINAL -e abook"
+  m:0x40 + c:38
+
+"telegram-desktop"
+  m:0x41 + c:28
+
 # set directly keycode (here control + f with my keyboard)
 
 # specify a mouse button
