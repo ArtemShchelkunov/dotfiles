@@ -39,16 +39,16 @@
 
 # Examples of commands:
 
-"amixer sset 'Master' 5%-"
+"pactl set-sink-volume @DEFAULT_SINK@ -1000"
   XF86AudioLowerVolume
 
-"amixer sset 'Master' 5%+"
+"pactl set-sink-volume @DEFAULT_SINK@ +1000"
   XF86AudioRaiseVolume 
 
-"amixer set Master toggle"
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
   XF86AudioMute
 
-"amixer set Capture toggle"
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
   XF86AudioMicMute
 
 "gscreenshot-cli -sf ~/Screenshots"
@@ -60,6 +60,9 @@
 "gscreenshot-cli -sc"
   m:0x4 + c:107
 
+"gscreenshot-cli -c"
+  m:0x8 + c:107
+
 "$BROWSER"
   m:0x40 + c:25
 
@@ -69,8 +72,16 @@
 "$TERMINAL -e abook"
   m:0x40 + c:38
 
-"telegram-desktop"
-  m:0x41 + c:28
+"passmenu"
+  m:0x40 + c:33
+
+"dmenu-emoji.sh"
+  m:0x40 + c:26
+
+"mpv av://v4l2:/dev/video0 --profile=low-latency --untimed"
+  m:0x40 + c:133
+  
+
 
 # set directly keycode (here control + f with my keyboard)
 
